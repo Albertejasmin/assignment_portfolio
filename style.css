@@ -1,0 +1,156 @@
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+body {
+  margin-inline: 2rem;
+}
+section {
+  margin-bottom: 4rem;
+}
+a {
+  text-transform: uppercase;
+  color: var(--color-default);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--color-default);
+  color: var(--color-background);
+}
+/*Color Properties */
+:root {
+  --color-default: #000000;
+  --color-background: #ffffff;
+  --color-secondary: #c3c3c3;
+  --color-accent-1: #5a5b5c;
+}
+
+/* Font + size*/
+html {
+  font-family: "Figtree", sans-serif;
+}
+
+:root {
+  --step--p: 1rem;
+  --step--4: clamp(0.33rem, calc(-0.37rem + 3.74vw), 2.53rem);
+  --step--3: clamp(0.5rem, calc(-0.55rem + 5.61vw), 3.8rem);
+  --step--2: clamp(0.75rem, calc(-0.83rem + 8.42vw), 5.7rem);
+  --step-1: clamp(1.13rem, calc(-1.24rem + 12.63vw), 8.54rem);
+}
+
+h1 {
+  font-size: var(--step-1);
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: var(--step--2);
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: var(--step--3);
+}
+p {
+  font-size: var(--step--p);
+  line-height: 1.5rem;
+}
+
+/* HEADER */
+
+.logo {
+  background-color: black;
+  width: 3rem;
+  height: 2rem;
+}
+.btn {
+  background-color: transparent;
+  border: solid 2px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  padding-block: 1rem;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background-color: var(--color-background);
+}
+
+.header_text {
+  margin-block: 8rem 6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header_text p {
+  font-size: 1rem;
+}
+
+/* ASSIGMENTS HEADERS  */
+#asign_header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-block: 8rem 5rem;
+}
+.asign_header_text {
+  width: 70vw;
+}
+
+.header_graphic_font {
+  width: 10rem;
+  height: 10rem;
+  background-color: #bec700;
+}
+
+/* INTRO */
+
+.intro_text,
+.conclusion_text {
+  max-width: 65ch;
+}
+
+/* ASSIGNMENTS */
+
+#assigment {
+  display: flex;
+  min-height: 50vh;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.visual_grid {
+  display: grid;
+  grid-gap: 1.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.about p {
+  max-width: 65ch;
+}
+
+.project_link {
+  margin-top: 2rem;
+}
+.project_link a {
+  background-color: var(--color-default);
+  color: var(--color-background);
+  padding: 1rem;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-block: 2rem 4rem;
+  gap: 2rem;
+  border-top: solid 2.5px;
+}
