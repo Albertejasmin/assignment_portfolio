@@ -4,7 +4,9 @@
   padding: 0px;
   list-style: none;
 }
-
+img {
+  max-width: 100%;
+}
 body {
   margin-inline: 2rem;
 }
@@ -102,11 +104,11 @@ nav {
   width: 70vw;
 }
 
-.header_graphic_font {
+/* .header_graphic_font {
   width: 10rem;
   height: 10rem;
   background-color: #bec700;
-}
+} */
 
 /* INTRO */
 
@@ -124,6 +126,20 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+}
+
+.assigment_graphic {
+  width: 30vw;
+  height: 15vw;
+  min-width: 250px;
+  min-height: 150px;
+  padding: 1rem;
+  margin: 3rem;
+}
+
+.assigment_text {
+  width: 50vw;
+  min-width: 300px;
 }
 
 .visual_grid {
